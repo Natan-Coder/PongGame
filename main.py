@@ -135,5 +135,5 @@ game_over_display.hideturtle()
 game_over_display.goto(0, 0)
 game_over_display.write("Game Over! {} wins!".format(winner), align="center", font=("Arial", 36, "normal"))
 
-turtle.done()
+turtle.mainloop()
 
