@@ -121,11 +121,11 @@ def paddle2_down():
 
 
 # Set up keyboard bindings
-turtle.listen()
-turtle.onkeypress(paddle1_up, "w")
-turtle.onkeypress(paddle1_down, "s")
-turtle.onkeypress(paddle2_up, "Up")
-turtle.onkeypress(paddle2_down, "Down")
+def key_bindings():
+    turtle.onkeypress(paddle1_up, "w")
+    turtle.onkeypress(paddle1_down, "s")
+    turtle.onkeypress(paddle2_up, "Up")
+    turtle.onkeypress(paddle2_down, "Down")
 
 # Game over screen
 game_over_display = turtle.Turtle()
@@ -135,5 +135,6 @@ game_over_display.hideturtle()
 game_over_display.goto(0, 0)
 game_over_display.write("Game Over! {} wins!".format(winner), align="center", font=("Arial", 36, "normal"))
 
+turtle.listen()
 turtle.mainloop()
 
