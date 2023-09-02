@@ -126,4 +126,3 @@ while True:
         ball_dx *= -1
 
 
-
