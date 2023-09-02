@@ -124,5 +124,4 @@ while True:
     elif (-340 > ball.xcor() > -350) and (paddle1.ycor() + 50 > ball.ycor() > paddle1.ycor() - 50):
         ball.setx(-340)
         ball_dx *= -1
-
-
+# Stopping point - Need to fix ball rebound
